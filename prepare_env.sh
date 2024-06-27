@@ -18,12 +18,12 @@ conda deactivate
 echo Finish creating classification environment!
 
 
-# Instance segmentation
+# SAM with LoRA Instance segmentation
 echo Start create instance segmentation environment!
 
-git clone -b dev https://github.com/VanLinLin/SAMed.git
+git clone -b dev_deploy https://github.com/VanLinLin/SAMed.git
 
-conda create -n SAMed python=3.7.11 -y
+conda create -n SAMed python=3.9 -y
 
 conda activate SAMed
 
