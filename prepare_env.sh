@@ -25,7 +25,7 @@ git clone https://github.com/hitachinsk/SAMed.git
 
 cd SAMed || exit
 
-conda create -n SAMed python=3.7.11
+conda create -n SAMed python=3.7.11 -y
 
 conda activate SAMed
 
