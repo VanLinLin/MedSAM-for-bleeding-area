@@ -21,20 +21,14 @@ echo Finish creating classification environment!
 # Instance segmentation
 echo Start create instance segmentation environment!
 
-conda env create -n medsam python=3.10 -y
+git clone https://github.com/hitachinsk/SAMed.git
 
-conda activate medsam
+cd SAMed || exit
 
-conda install conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda create -n SAMed python=3.7.11
 
-conda install -c conda-forge cudatoolkit-dev -y
+conda activate SAMed
 
-git clone https://github.com/bowang-lab/MedSAM
-
-cd MedSAM || exit
-
-pip install -e .
-
-conda deactivate
+pip install -r requirements.txt
 
 echo Finish creating instance segmentation environment!
