@@ -23,14 +23,10 @@ echo Start create instance segmentation environment!
 
 git clone -b dev https://github.com/VanLinLin/SAMed.git
 
-cd SAMed || exit
-
 conda create -n SAMed python=3.7.11 -y
 
 conda activate SAMed
 
-pip install -r requirements.txt
-
-cd ..
+pip install -r SAMed/requirements.txt
 
 echo Finish creating instance segmentation environment!
